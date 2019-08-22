@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">MyMovies</string>
+    <string name="api_key">387932108665810339b6e5dc0e02c04a</string>
+    <!--LoginFragment-->
+    <string name="username_hint">Usuário</string>
+    <string name="password_hint">Senha</string>
+    <string name="login_btn_label">Entrar</string>
+    <string name="signup_btn_label">Cadastre-se</string>
+    <!--end-->
 </resources>
