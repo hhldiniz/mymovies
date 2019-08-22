@@ -7,4 +7,11 @@
     <string name="login_btn_label">Entrar</string>
     <string name="signup_btn_label">Cadastre-se</string>
     <!--end-->
+
+    <!--SignupFragment-->
+    <string name="complete_register_btn_label">Cadastrar</string>
+    <string name="new_username_hint">Novo Usuário</string>
+    <string name="new_password_hint">Sua nova senha</string>
+    <string name="new_password_confirmation_hint">Confirme sua nova senha</string>
+    <!--end-->
 </resources>
