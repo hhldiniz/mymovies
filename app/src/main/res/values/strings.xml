@@ -13,5 +13,11 @@
     <string name="new_username_hint">Novo Usuário</string>
     <string name="new_password_hint">Sua nova senha</string>
     <string name="new_password_confirmation_hint">Confirme sua nova senha</string>
+    <string name="invalid_password">Senhas não conferem</string>
+    <!--end-->
+
+    <!--HomeFragment-->
+    <string name="movie_list_menu_label">Filmes</string>
+    <string name="favorites_list_menu_label">Favoritos</string>
     <!--end-->
 </resources>

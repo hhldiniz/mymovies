@@ -3,6 +3,7 @@ package com.example.mymovies.viewmodel
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LifecycleObserver
+import com.example.mymovies.data.models.User
 import com.example.mymovies.data.repository.UserRepository
 
 class SignupFragmentViewModel(private val userRepository: UserRepository, application: Application):
@@ -11,5 +12,9 @@ class SignupFragmentViewModel(private val userRepository: UserRepository, applic
     val password = ""
     val passwordConfirmation = ""
 
+    fun saveAsync() = userRepository.saveAsync(User(
+        username,
+        password
+    ))
 
 }

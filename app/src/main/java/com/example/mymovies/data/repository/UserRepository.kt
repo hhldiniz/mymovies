@@ -10,9 +10,15 @@ class UserRepository {
 
     private val userDao = db.getUserDao()
 
-    fun save(vararg user: User): Deferred<Unit>{
+    fun saveAsync(vararg user: User): Deferred<Unit>{
         return GlobalScope.async {
             userDao.insert(*user)
+        }
+    }
+
+    fun loginAsync(username: String, password: String): Deferred<User?>{
+        return GlobalScope.async {
+            userDao.getByUsernameAndPassword(username, password).value
         }
     }
 }

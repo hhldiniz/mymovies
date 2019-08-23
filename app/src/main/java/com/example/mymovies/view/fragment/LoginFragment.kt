@@ -12,6 +12,8 @@ import com.example.mymovies.extensions.inflate
 import com.example.mymovies.viewmodel.LoginFragmentViewModel
 import com.example.mymovies.viewmodel.LoginFragmentViewModelFactory
 import kotlinx.android.synthetic.main.login_fragment.*
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 
 class LoginFragment: BaseFragment() {
 
@@ -35,5 +37,11 @@ class LoginFragment: BaseFragment() {
             findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToSignupFragment())
         }
         this.lifecycle.addObserver(viewModel)
+        login_btn.setOnClickListener {
+            GlobalScope.launch {
+//                if(viewModel.loginAsync().await() != null)
+                    findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToHomeFragment())
+            }
+        }
     }
 }

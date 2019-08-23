@@ -16,7 +16,7 @@ class SignupFragmentViewModelFactory(
             @Suppress("UNCHECKED_CAST")
             when{
                 isAssignableFrom(SignupFragmentViewModel::class.java)->
-                    SignupFragmentViewModelFactory(userRepository, application)
+                    SignupFragmentViewModel(userRepository, application)
                 else->
                     throw IllegalArgumentException("Unknown class")
             } as T
