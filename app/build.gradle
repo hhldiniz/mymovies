@@ -43,6 +43,8 @@ dependencies {
     kapt "androidx.room:room-compiler:2.2.0-beta01"
     implementation "android.arch.lifecycle:viewmodel:1.1.1"
     implementation 'android.arch.navigation:navigation-fragment-ktx:1.0.0'
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.1.1"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.1.1"
     implementation 'android.arch.navigation:navigation-ui-ktx:1.0.0'
     implementation 'com.squareup.retrofit2:retrofit:2.6.1'
     androidTestImplementation 'androidx.test:runner:1.2.0'
